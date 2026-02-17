@@ -5,7 +5,7 @@ import java.util.Scanner
 fun main() {
     val scanner = Scanner(System.`in`)
 
-    println("--- APLILASO PMB UMB ---")
+    println("--- APLIKASI PMB UMB ---")
 
     print("masukan nama")
     val name = scanner.nextLine()
@@ -15,13 +15,27 @@ fun main() {
 
     scanner.nextLine()
 
-    if (nim.length != 5){
+    if (nim.length != 5) {
         println("ERROR: NIM harus 5 karakter!!!")
     }else{
-        print("masukan jurusan:")
-        val major = scanner.nextLine()
+        print("Pilih jalur (1.Reguler, 2.Umum)")
+        val type = scanner.nextInt()
+        scanner.nextLine()
 
-        val s1 = student(name, nim, major)
-        println("Status: pendaftaran berhasil")
+        if (type == 1){
+            print("masukan jurusan: ")
+            val major = scanner.nextLine()
+//          pake primary constructor
+            val s1 = student(name, nim, major)
+            println("terdaftar di ${s1.major} dengan gpa awal ${s1.gpa}")
+        }else if (type == 2){
+//          pake sec constructor
+            val s2 = student(name, nim)
+            println("terdaftar di ${s2.major} dengan gpa awal ${s2.gpa}")
+        }else{
+            println("pendaftaran batal. silahkan input lagi dengan benar")
+        }
     }
+
+
 }
