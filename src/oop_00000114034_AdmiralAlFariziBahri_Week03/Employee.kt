@@ -3,7 +3,12 @@ package oop_00000114034_AdmiralAlFariziBahri_Week03
 class Employee(val name: String){
     var salary:Int = 0
     set(value) {
-        println("mencoba set gaji ke: ${value}")
-        this.salary = value
+        if(value < 0){
+            println("gaji tidak boleh negatif")
+            field = 0
+        }else{
+            field = value
+        }
+
     }
 }
