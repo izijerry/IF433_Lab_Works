@@ -17,7 +17,7 @@ class Player(val username: String) {
         xp += amount
         val newLevel = level
         if (newLevel > oldLevel){
-            println("Level Up! Selamat $username naik ke level$level")
+            println("Level Up! Selamat $username naik ke level $level")
         }
     }
 }
