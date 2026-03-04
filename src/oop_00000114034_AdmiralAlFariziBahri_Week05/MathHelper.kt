@@ -1,6 +1,6 @@
 package oop_00000114034_AdmiralAlFariziBahri_Week05
 
-class MathHelper {
+class MathHelper() {
     fun hitungLuas(sisi: Int): Int{
         return sisi * sisi
     }
