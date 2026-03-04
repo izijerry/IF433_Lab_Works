@@ -4,7 +4,7 @@ class Ewallet(accountName: String, var balance: Double): PaymentMethod(accountNa
     override fun processPayment(amount: Double) {
         if (balance >= amount){
             balance -= amount
-            println("sukses")
+            println("bayar sukses")
         }else{
             println("saldo tidak cukup.")
         }
