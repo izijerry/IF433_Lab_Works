@@ -1,7 +1,7 @@
 package oop_00000114034_AdmiralAlFariziBahri_Week03
 
 fun main(){
-    val t = Weapon("tes")
+    val t = Weapon("oop_00000114034_AdmiralAlFariziBahri_Week06")
 
     t.damage = -50
     t.damage = 9999
