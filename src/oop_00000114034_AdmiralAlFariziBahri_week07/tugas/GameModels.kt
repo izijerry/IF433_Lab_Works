@@ -1,2 +1,9 @@
 package oop_00000114034_AdmiralAlFariziBahri_week07.tugas
 
+enum class GameModels(val dropChance: Int) {
+    COMMON(50),
+    UNCOMMON(25),
+    RARE(15),
+    EPIC(7),
+    LEGENDARY(3)
+}
