@@ -1,5 +1,7 @@
 package oop_00000114034_AdmiralAlFariziBahri_week07
 
+import oop_00000114034_AdmiralAlFariziBahri_week07.tugas.GameManager
+
 fun main() {
     println("=== TEST SINGLETON ===")
     println("Status: ${DatabaseManager.connectionStatus}")
@@ -30,4 +32,8 @@ fun main() {
         is ApiResponse.Error -> "Munculkan alert: ${response.message}"
         ApiResponse.Loading -> "Tampilkan Spinner"
     }
+
+
+    GameManager.startGame()
+    GameManager.startGame()
 }
