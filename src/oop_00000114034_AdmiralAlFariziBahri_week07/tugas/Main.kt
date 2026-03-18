@@ -9,4 +9,6 @@ fun main() {
     val starterWeapon = Weapon.forgeStarterSword()
     println(starterWeapon.item)
     println("Durability: ${starterWeapon.durability}")
+
+
 }
