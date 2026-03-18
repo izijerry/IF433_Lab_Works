@@ -9,8 +9,8 @@ fun Main() {
     val client = NetworkClient.createClient()
 
     println("\n=== TEST REGULAR CLASS ===")
-    val reg1 = RegularUser("Alice", 28)
-    val reg2 = RegularUser("Alice", 28)
-    println(reg1)
-    println("sama? ${reg1 == reg2}")
+    val data1 = RegularUser("Alice", 28)
+    val data2 = RegularUser("Alice", 28)
+    println(data1)
+    println("sama? ${data1 == data2}")
 }
