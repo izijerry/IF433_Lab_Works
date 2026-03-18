@@ -1,6 +1,8 @@
 package oop_00000114034_AdmiralAlFariziBahri_week07
 
+import oop_00000114034_AdmiralAlFariziBahri_Week03.Weapon
 import oop_00000114034_AdmiralAlFariziBahri_week07.tugas.GameManager
+import oop_00000114034_AdmiralAlFariziBahri_week07.tugas.ItemRarity
 
 fun main() {
     println("=== TEST SINGLETON ===")
@@ -34,6 +36,7 @@ fun main() {
     }
 
 
-    GameManager.startGame()
-    GameManager.startGame()
+
+
+
 }
