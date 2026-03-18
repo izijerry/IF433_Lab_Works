@@ -1,6 +1,6 @@
 package oop_00000114034_AdmiralAlFariziBahri_week07.tugas
 
-enum class GameModels(val dropChance: Int) {
+enum class ItemRarity(val dropChance: Int) {
     COMMON(50),
     UNCOMMON(25),
     RARE(15),
@@ -8,6 +8,4 @@ enum class GameModels(val dropChance: Int) {
     LEGENDARY(3)
 }
 
-data class GameItem(val name: String, val damage: Int, val rarity: ItemRarity){
-
-}
+data class GameItem(val name: String, val damage: Int, val rarity: ItemRarity)
