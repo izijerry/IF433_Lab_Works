@@ -55,4 +55,12 @@ fun main(){
     }catch(e:IllegalArgumentException){
         println(e.message)
     }
+
+    println("\n===TEST JAVA INTERPOP===")
+
+    val javaResponese = LegacyJavaAPI.fetchServerStatus()
+    val statusLength = javaResponese!!.length
+    println("status dari java: $javaResponese (Length: $statusLength)")
+
+
 }
