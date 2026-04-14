@@ -35,7 +35,7 @@ class ApiParser {
         }
 
         try {
-            val transactionId = JavaPaymentService.processPayment(id)
+            val transactionId = JavaPaymentService.processPayment(id!!)
             println("Payment Success: $transactionId")
         } catch (e: Exception) {
             println("Payment Failed for product $id")
