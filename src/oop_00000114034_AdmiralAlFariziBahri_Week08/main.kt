@@ -16,4 +16,14 @@ fun main(){
     } ?: "transaksi invalid: Harga belum di-set!"
 
     println(recipt)
+
+
+    println("\n===TEST SAFE CASTING===")
+    val mixedData: Link<Any> = listoff(
+        "Smartphone",
+        1500000,
+        UserProfile("Andi", null),
+        "laptop",
+        4500000.0
+    )
 }
