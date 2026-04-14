@@ -19,7 +19,7 @@ fun main(){
 
 
     println("\n===TEST SAFE CASTING===")
-    val mixedData: Link<Any> = listoff(
+    val mixedData: List<Any> = listoff(
         "Smartphone",
         1500000,
         UserProfile("Andi", null),
