@@ -11,7 +11,6 @@ class WalletRepository<T> {
     fun getAll(): List<T> {
         return items
     }
-
     fun searchByName(keyword: String): List<T> {
         return items.filter {
             when (it) {
@@ -20,4 +19,5 @@ class WalletRepository<T> {
             }
         }
     }
+
 }
